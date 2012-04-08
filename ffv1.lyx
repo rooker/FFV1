@@ -141,9 +141,8 @@ MSB Most Significant Bit: The bit that can cause the largest change in magnitude
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-RCT Reversible Color Transform: It is a transform used to map an integer
- number domain into an integer number co-domain.
- It is used for lossless compression.
+RCT Reversible Color Transform: A near linear, exactly reversible integer
+ transform that converts between RGB and YCbCr representations of a sample.
 \end_layout
 
 \begin_layout Labeling
@@ -497,11 +496,11 @@ Median predictor
 \end_layout
 
 \begin_layout Standard
-median(left, top, left + top - diag)
+median(left, top, left + top - diagonal)
 \end_layout
 
 \begin_layout Standard
-left, top, diag are the left, top and left-top samples
+left, top, diagonal are the left, top and left-top samples
 \end_layout
 
 \begin_layout Standard
@@ -3531,7 +3530,7 @@ alpha_plane 1 if a transparency plane is stored, 0 otherwise
 \end_layout
 
 \begin_layout Subsection
-Quant Table
+Quantization Tables
 \end_layout
 
 \begin_layout Standard
