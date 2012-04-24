@@ -1583,7 +1583,7 @@ encode(diff);
 
 \begin_layout Standard
 Note, this is different from JPEG-LS, which doesn't use prediction in run
- mode and uses a different encoding and context model for the last difference
+ mode and uses a different encoding and context model for the last difference.
  On a small set of test samples the use of prediction slightly improved
  the compression rate.
 \end_layout
@@ -3231,9 +3231,10 @@ slice_size
 
 \begin_layout Labeling
 \labelwidthstring 12345678901234567890
-slice_size Size of the slice in bytes, this allows finding the start of
- slices before previous slices have been fully decoded.
- And allows this way parallel decoding as well as error resilience.
+slice_size Size of the slice in bytes.
+ This makes it possible to find the start of slices before previous slices
+ have been fully decoded.
+ This allows parallel decoding as well as error resilience.
 \end_layout
 
 \begin_layout Subsection
